@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  --background: #000000; /* Absolute black for Alireza aesthetic */
+  --foreground: #ffffff;
+  --card-bg: rgba(20, 20, 20, 0.4);
+  --card-border: rgba(255, 255, 255, 0.05);
+  --text-muted: #8e8e93;
+  --scrollbar-track: #000000;
+  --scrollbar-thumb: #222222;
+  --grid-color: rgba(255, 255, 255, 0.03);
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+}
+
+/* Luxury Film Grain Noise Overlay (Base64-encoded to prevent LightningCSS compiler bugs) */
+.noise-overlay {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200%;
+  background: transparent url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZUZpbHRlciI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiYmFzZUZyZXF1ZW5jeT0iMC43NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZUZpbHRlcikiIG9wYWNpdHk9IjAuMDQiLz48L3N2Zz4=') repeat;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 999;
+  animation: noise 1.2s steps(6) infinite;
+}
+
+@keyframes noise {
+  0%, 100% { transform:translate(0, 0); }
+  10% { transform:translate(-3%, -2%); }
+  20% { transform:translate(-8%, 4%); }
+  30% { transform:translate(4%, -8%); }
+  40% { transform:translate(-4%, 10%); }
+  50% { transform:translate(-8%, -4%); }
+  60% { transform:translate(12%, 4%); }
+  70% { transform:translate(4%, 8%); }
+  80% { transform:translate(-12%, -12%); }
+  90% { transform:translate(8%, 4%); }
+}
+
+.bg-radial-fog {
+  background: radial-gradient(circle, rgba(0,0,0,0.1) 10%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,1) 100%);
+}
+
+.bg-radial-fog-light {
+  background: radial-gradient(circle, rgba(244,244,247,0.1) 10%, rgba(244,244,247,0.8) 80%, rgba(244,244,247,1) 100%);
+}
+
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  transition: background 0.5s ease, border 0.5s ease;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+  transition: background 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Thin Grid Lines for Alireza aesthetic */
+.grid-line-y {
+  border-left: 1px solid var(--grid-color);
+  border-right: 1px solid var(--grid-color);
+}
+.grid-line-x {
+  border-top: 1px solid var(--grid-color);
+  border-bottom: 1px solid var(--grid-color);
+}
+
+/* Luxury Kinetic Typography Stroke Text */
+.stroke-theme {
+  -webkit-text-stroke: 1px var(--foreground);
+  opacity: 0.08;
+  transition: -webkit-text-stroke 0.5s ease;
+}
+
+.dark .stroke-theme {
+  -webkit-text-stroke: 1.2px rgba(255, 255, 255, 0.12);
+}
+
+.light .stroke-theme {
+  -webkit-text-stroke: 1.2px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track); 
+  transition: background 0.5s ease;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb); 
+  border-radius: 4px;
+  transition: background 0.5s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
