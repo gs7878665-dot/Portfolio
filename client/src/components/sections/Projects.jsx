@@ -65,7 +65,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 flex items-center tracking-tight text-gray-900 dark:text-white transition-colors duration-300">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 flex items-center tracking-tight text-white dark:text-white transition-colors duration-300">
             <span className="text-primary mr-4">03.</span> Featured Projects
             <div className="h-[1px] bg-gray-300 dark:bg-gray-800 flex-grow ml-8 opacity-40"></div>
           </h2>
@@ -91,12 +91,12 @@ const Projects = () => {
                       <div className="text-primary text-4xl font-black opacity-10 group-hover:opacity-100 group-hover:text-5xl transition-all duration-300 absolute right-6 top-6 select-none pointer-events-none">
                         {String(index + 1).padStart(2, '0')}
                       </div>
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white relative z-10 w-3/4 transition-colors duration-300">
+                      <h3 className="text-2xl font-bold text-white dark:text-white relative z-10 w-3/4 transition-colors duration-300">
                         {project.title}
                       </h3>
                     </div>
                     
-                    <p className="text-slate-800 dark:text-gray-300 mb-8 flex-grow relative z-10 text-sm leading-relaxed font-semibold transition-colors duration-300">
+                    <p className="text-white dark:text-white mb-8 flex-grow relative z-10 text-sm leading-relaxed font-semibold transition-colors duration-300">
                       {project.description}
                     </p>
 
@@ -114,7 +114,7 @@ const Projects = () => {
                           href={project.github} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors p-1" 
+                          className="text-gray-300 dark:text-gray-200 hover:text-white dark:hover:text-white transition-colors p-1" 
                           title="GitHub"
                         >
                           <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -126,7 +126,7 @@ const Projects = () => {
                           href={project.live} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors p-1"
+                          className="text-gray-300 dark:text-gray-200 hover:text-white dark:hover:text-white transition-colors p-1"
                           title="Live Site"
                         >
                           <ExternalLink size={18} strokeWidth={2.2} />

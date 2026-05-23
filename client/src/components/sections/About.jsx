@@ -13,7 +13,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 flex items-center tracking-tight text-gray-900 dark:text-white transition-colors duration-300">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 flex items-center tracking-tight text-white dark:text-white transition-colors duration-300">
             <span className="text-primary mr-4">01.</span> About Me
             <div className="h-[1px] bg-gray-700 dark:bg-gray-800 flex-grow ml-8 opacity-30"></div>
           </h2>
@@ -25,7 +25,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-slate-900 dark:text-gray-300 space-y-6 text-lg leading-relaxed font-semibold transition-colors duration-300"
+            className="text-white dark:text-white space-y-6 text-lg leading-relaxed font-semibold transition-colors duration-300"
           >
             <p>
               Hello! I'm Gaurav Shukla, a passionate first-year Computer Science Engineering student currently studying at KIET Group of Institutions. My journey in tech started with a profound curiosity for how things work on the internet, and that led me to dive deep into Web Development and Artificial Intelligence.

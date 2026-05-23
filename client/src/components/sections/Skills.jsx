@@ -23,7 +23,7 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 flex items-center justify-end tracking-tight text-gray-900 dark:text-white transition-colors duration-300">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 flex items-center justify-end tracking-tight text-white dark:text-white transition-colors duration-300">
             <div className="h-[1px] bg-gray-300 dark:bg-gray-800 flex-grow mr-8 opacity-40"></div>
             Skills & Certifications <span className="text-primary ml-4">.02</span>
           </h2>
@@ -45,13 +45,13 @@ const Skills = () => {
                     <div className="p-3 bg-black/5 dark:bg-white/5 rounded-xl border border-black/5 dark:border-white/5 shadow-inner">
                       {skill.icon}
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-white dark:text-white transition-colors duration-300">
                       {skill.category}
                     </h3>
                   </div>
                   <ul className="space-y-3">
                     {skill.items.map((item, i) => (
-                      <li key={i} className="text-slate-800 dark:text-gray-400 flex items-center gap-2.5 text-sm font-semibold transition-colors duration-300">
+                      <li key={i} className="text-white dark:text-white flex items-center gap-2.5 text-sm font-semibold transition-colors duration-300">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
                         {item}
                       </li>

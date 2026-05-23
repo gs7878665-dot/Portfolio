@@ -39,10 +39,10 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white transition-colors duration-300">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white dark:text-white transition-colors duration-300">
             <span className="text-primary">04.</span> Get In Touch
           </h2>
-          <p className="text-slate-800 dark:text-gray-400 max-w-2xl mx-auto font-semibold transition-colors duration-300">
+          <p className="text-white dark:text-white max-w-2xl mx-auto font-semibold transition-colors duration-300">
             I'm currently looking for new opportunities and collaborations. Whether you have a question, an idea, or just want to say hi, I'll try my best to get back to you!
           </p>
         </motion.div>
@@ -56,26 +56,26 @@ const Contact = () => {
           >
             <div className="glass-card p-8 rounded-2xl h-full flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-white dark:text-white mb-6 transition-colors duration-300">
                   Contact Information
                 </h3>
                 
                 <div className="space-y-6">
-                  <div className="flex items-center gap-4 text-slate-900 dark:text-gray-300 transition-colors duration-300">
+                  <div className="flex items-center gap-4 text-white dark:text-white transition-colors duration-300">
                     <div className="p-3 bg-black/5 dark:bg-white/5 rounded-full text-primary border border-black/5 dark:border-white/5">
                       <Mail size={20} />
                     </div>
                     <span className="font-bold text-sm md:text-base">gs7878665@gmail.com</span>
                   </div>
                   
-                  <div className="flex items-center gap-4 text-slate-900 dark:text-gray-300 transition-colors duration-300">
+                  <div className="flex items-center gap-4 text-white dark:text-white transition-colors duration-300">
                     <div className="p-3 bg-black/5 dark:bg-white/5 rounded-full text-primary border border-black/5 dark:border-white/5">
                       <Phone size={20} />
                     </div>
                     <span className="font-bold text-sm md:text-base">+91 9026154972</span>
                   </div>
                   
-                  <div className="flex items-center gap-4 text-slate-900 dark:text-gray-300 transition-colors duration-300">
+                  <div className="flex items-center gap-4 text-white dark:text-white transition-colors duration-300">
                     <div className="p-3 bg-black/5 dark:bg-white/5 rounded-full text-primary border border-black/5 dark:border-white/5">
                       <MapPin size={20} />
                     </div>
@@ -85,7 +85,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-12">
-                <h4 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4 transition-colors duration-300">
+                <h4 className="text-xs font-bold text-white dark:text-white uppercase tracking-widest mb-4 transition-colors duration-300">
                   Social Profiles
                 </h4>
                 <div className="flex gap-4">
@@ -106,7 +106,7 @@ const Contact = () => {
                     href="https://github.com/gs7878665-dot" 
                     target="_blank" 
                     rel="noreferrer" 
-                    className="p-3 bg-black/5 dark:bg-white/5 rounded-full text-gray-600 dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all border border-black/5 dark:border-white/5" 
+                    className="p-3 bg-black/5 dark:bg-white/5 rounded-full text-white dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all border border-black/5 dark:border-white/5" 
                     title="GitHub"
                   >
                     <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -127,7 +127,7 @@ const Contact = () => {
           >
             <form onSubmit={handleSubmit} className="glass-card p-8 rounded-2xl flex flex-col gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-bold text-slate-900 dark:text-gray-300 mb-2 transition-colors duration-300">
+                <label htmlFor="name" className="block text-sm font-bold text-white dark:text-white mb-2 transition-colors duration-300">
                   Your Name
                 </label>
                 <input
@@ -142,7 +142,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-bold text-slate-900 dark:text-gray-300 mb-2 transition-colors duration-300">
+                <label htmlFor="email" className="block text-sm font-bold text-white dark:text-white mb-2 transition-colors duration-300">
                   Your Email
                 </label>
                 <input
@@ -157,7 +157,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-bold text-slate-900 dark:text-gray-300 mb-2 transition-colors duration-300">
+                <label htmlFor="message" className="block text-sm font-bold text-white dark:text-white mb-2 transition-colors duration-300">
                   Your Message
                 </label>
                 <textarea

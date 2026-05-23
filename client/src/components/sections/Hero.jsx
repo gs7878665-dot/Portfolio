@@ -28,7 +28,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-3xl md:text-5xl font-bold text-slate-700 dark:text-gray-400 mb-8 transition-colors duration-300"
+          className="text-3xl md:text-5xl font-bold text-white dark:text-white mb-8 transition-colors duration-300"
         >
           Aspiring Software Developer
         </motion.h2>
@@ -37,7 +37,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-lg text-slate-900 dark:text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed font-semibold transition-colors duration-300"
+          className="text-lg text-white dark:text-white max-w-2xl mx-auto mb-10 leading-relaxed font-semibold transition-colors duration-300"
         >
           I'm a first-year Computer Science Engineering student passionate about building modern web applications, AI-driven technologies, and continuously pushing my limits through hands-on projects and hackathons.
         </motion.p>
@@ -75,8 +75,8 @@ const Hero = () => {
         transition={{ delay: 1, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center"
       >
-        <span className="text-xs uppercase tracking-widest text-gray-400 mb-2">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-gray-400 to-transparent"></div>
+        <span className="text-xs uppercase tracking-widest text-white mb-2">Scroll</span>
+        <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
       </motion.div>
     </section>
   );

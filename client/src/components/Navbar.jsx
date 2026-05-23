@@ -41,7 +41,7 @@ const Navbar = () => {
             <Magnetic key={link.name} range={35}>
               <a
                 href={link.href}
-                className="text-sm font-semibold transition-colors duration-300 py-2 px-3 text-gray-300 hover:text-white"
+                className="text-sm font-semibold transition-colors duration-300 py-2 px-3 text-white hover:text-white"
               >
                 {link.name}
               </a>
@@ -72,7 +72,7 @@ const Navbar = () => {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-base font-semibold transition-colors text-gray-300 hover:text-white"
+              className="text-base font-semibold transition-colors text-white hover:text-white"
             >
               {link.name}
             </a>
