@@ -9,7 +9,7 @@ const skills = [
   { category: "Backend & DB", items: ["Node.js", "Express", "MongoDB"], icon: <Database className="text-green-500" /> },
   { category: "Cloud & DevOps", items: ["AWS Academy", "Google Cloud", "Git & GitHub"], icon: <Cloud className="text-orange-500" /> },
   { category: "AI & ML", items: ["Oracle OCI AI", "Gen AI & LLM", "AI Skills Passport"], icon: <BrainCircuit className="text-purple-500" /> },
-  { category: "Tools", items: ["VS Code", "Postman", "Figma"], icon: <Terminal className="text-gray-500 dark:text-gray-300" /> }
+  { category: "Tools", items: ["VS Code", "Postman", "Figma"], icon: <Terminal className="text-white dark:text-white" /> }
 ];
 
 const Skills = () => {
